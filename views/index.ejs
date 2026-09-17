@@ -32,7 +32,6 @@
 
     </nav>
 
-
     <!-- Hero Section -->
     <section class="hero" id="home">
 
@@ -52,7 +51,6 @@
         </div>
 
     </section>
-
 
     <!-- Registration Section -->
     <section class="registration" id="registration">
@@ -84,7 +82,6 @@
                     required
                 >
 
-
                 <!-- Course -->
                 <label>Course</label>
 
@@ -103,8 +100,6 @@
                     </option>
 
                 </select>
-
-
                 <!-- Password -->
                 <label>Password</label>
 
@@ -133,7 +128,6 @@
 
     </section>
 
-
     <!-- Features Section -->
     <section class="features" id="features">
 
@@ -151,8 +145,6 @@
                 </p>
 
             </div>
-
-
             <div class="feature-card shadow-sm p-4">
 
                 <h3>🔒 Validation</h3>
@@ -179,8 +171,6 @@
         </div>
 
     </section>
-
-
     <!-- Footer -->
     <footer>
 
@@ -255,8 +245,6 @@
 
                 return;
             }
-
-
             // Client-side validation successful
             alert("✅ Client-side validation successful!");
 
@@ -279,11 +267,7 @@
                     })
 
                 });
-
-
                 const data = await response.json();
-
-
                 // Server error
                 if (!response.ok) {
 
@@ -291,14 +275,10 @@
 
                     return;
                 }
-
-
                 // Success
                 alert("✅ Student registered successfully!");
 
                 form.reset();
-
-
                 // Open student management page
                 window.location.href = "/students";
 
@@ -311,12 +291,9 @@
             }
 
         });
-
-
         // Smooth Navigation
         const navLinks =
             document.querySelectorAll(".nav-links a");
-
 
         navLinks.forEach(link => {
 
@@ -327,8 +304,6 @@
 
                 const targetSection =
                     document.querySelector(targetId);
-
-
                 if (targetSection) {
 
                     event.preventDefault();
@@ -336,15 +311,10 @@
                     targetSection.scrollIntoView({
                         behavior: "smooth"
                     });
-
                 }
-
             });
-
         });
 
     </script>
-
 </body>
-
 </html>
